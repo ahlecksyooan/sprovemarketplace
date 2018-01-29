@@ -43,12 +43,12 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top" style="border-bottom: 10px solid #8c8b8a;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top" style="border-bottom: 7px solid #6D6E70;">
       <div class="container">
-        <!-- also, decrease navbar height after changing color to white -->
         <a class="navbar-brand" href="#" style="font-family: 'Titillium Web', sans-serif;">
           <img src="images/logowithname2.png" alt="Sprove Marketplace" height="45px">
         </a>
+        <!-- note: button shows when nav is bg-dark, but not bg-white -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -124,7 +124,7 @@
     <section class="py-5">
       <div class="container" style="margin: 0 7.5%">
         <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
             <h3 style="font-family: 'Titillium Web', sans-serif; font-weight: 600;">Hours</h3>
             <ul class="hours list-group list-group-flush" style="padding-left: 0; padding-right: 15px;">
               <li class="list-group-item" style="padding: 8px 0;"><b>Sunday</b>: 7 am - 9 pm</li>
@@ -136,14 +136,19 @@
               <li class="list-group-item" style="padding: 8px 0;"><strong>Saturday</strong>: 7 am - 10 pm</li>
             </ul>
           </div>
-          <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12" id="summary">
+          <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12" id="summary">
               <h1 style="font-family: 'Titillium Web', sans-serif;">Welcome to Sprove!</h1>
               <p>
                 Sprove is the most kick-ass place in Jersey City. Our fine selection of food and beverages will keep you full all day. 
               </p>
               <h1 style="font-family: 'Titillium Web', sans-serif;">Location</h1>
               <div>
-                Embedded map and location coming soon.
+                <iframe
+                  width="85%"
+                  height="450"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAac9LrsDB45QnV0P7yDlr2jChLOURbIio&q=Sprove,Jersey+City+NJ" allowfullscreen>
+                </iframe>
               </div>
           </div>
         </div>
