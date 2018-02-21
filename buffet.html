@@ -39,6 +39,20 @@
 
     </style>
 
+    <script type="text/javascript">
+      var today = new Date();
+
+      var month = today.getMonth()+1;
+      var day = today.getDate();
+      var year = today.getFullYear();
+
+      var fullDate = month+"/"+day+"/"+year;
+
+      var header = "Buffet Menu - " + fullDate;
+
+      document.getElementById("buffetHeader").innerHTML = header
+    </script>
+
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -91,7 +105,7 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner" role="listbox" style="height: 380px">
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active" style="background-image: url('images/carousel_1.png')">
             <div class="carousel-caption d-none d-md-block">
@@ -131,7 +145,7 @@
     <!-- Page Content -->
     <section class="py-5">
       <div class="container" style="margin: 0 7.5%">
-        <h1>Hi</h1>
+        <h1 id="buffetHeader"></h1>
       </div>
     </section>
 
